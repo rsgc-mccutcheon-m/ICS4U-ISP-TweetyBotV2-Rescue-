@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F09AF0D1E9D35B500CB7183 /* SwifterMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9F51131944A61D00894629 /* SwifterMac.framework */; };
+		3F09AF0E1E9D35B500CB7183 /* SwifterMac.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8B9F51131944A61D00894629 /* SwifterMac.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8B116AF1194601970019A4DC /* SwifterHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B116AF0194601970019A4DC /* SwifterHTTPRequest.swift */; };
 		8B116AF2194601970019A4DC /* SwifterHTTPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B116AF0194601970019A4DC /* SwifterHTTPRequest.swift */; };
 		8B1F259F194A663D004BD304 /* SwifterHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1F259E194A663D004BD304 /* SwifterHelp.swift */; };
@@ -99,6 +101,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3F09AF0F1E9D35B500CB7183 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B9F50E51944A5AB00894629 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B9F51121944A61D00894629;
+			remoteInfo = SwifterMac;
+		};
 		8B300C401944AA6600993175 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8B9F50E51944A5AB00894629 /* Project object */;
@@ -130,6 +139,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				8B300C3F1944AA6600993175 /* SwifteriOS.framework in Embed Frameworks */,
+				3F09AF0E1E9D35B500CB7183 /* SwifterMac.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -213,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B300C3E1944AA6600993175 /* SwifteriOS.framework in Frameworks */,
+				3F09AF0D1E9D35B500CB7183 /* SwifterMac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +438,7 @@
 			);
 			dependencies = (
 				8B300C411944AA6600993175 /* PBXTargetDependency */,
+				3F09AF101E9D35B500CB7183 /* PBXTargetDependency */,
 			);
 			name = SwifterDemoiOS;
 			productName = SwifterDemoiOS;
@@ -719,6 +731,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3F09AF101E9D35B500CB7183 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B9F51121944A61D00894629 /* SwifterMac */;
+			targetProxy = 3F09AF0F1E9D35B500CB7183 /* PBXContainerItemProxy */;
+		};
 		8B300C411944AA6600993175 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8B9F50ED1944A5AB00894629 /* SwifteriOS */;
@@ -751,6 +768,7 @@
 		8B300C381944AA1A00993175 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -770,6 +788,7 @@
 		8B300C391944AA1A00993175 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SwifterDemoiOS/Info.plist;

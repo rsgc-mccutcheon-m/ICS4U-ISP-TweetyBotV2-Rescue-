@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import SwifterMac
 import Accounts
 
 class TweetBotDriver {
@@ -16,6 +16,7 @@ class TweetBotDriver {
         print($0.localizedDescription)
         
     }
+    
     
     var tokenKey : String
     var tokenSecret : String
@@ -44,6 +45,8 @@ class TweetBotDriver {
                 
                 self.swifter.getTimeline(for: sourceUserID, count: count, trimUser: true, contributorDetails: false, includeEntities: false, success: { statuses in
                     
+                    
+                    print("getting statuses")
                     guard let tweets = statuses.array else {
                         
                         print( "failed to put stati into array")
@@ -91,12 +94,12 @@ class TweetBotDriver {
                     
                 }, failure: self.failureHandler)
                 
-                
-                self.swifter.postTweet(status: self.markov.genTweet(length: 15), success: { _ in
-                    
-                    print("successful post")
-                    
-                }, failure: self.failureHandler)
+                print(tweets)
+//                self.swifter.postTweet(status: self.markov.genTweet(length: 15), success: { _ in
+//                    
+//                    print("successful post")
+//                    
+//                }, failure: self.failureHandler)
                 
                 
             }, failure: failureHandler)

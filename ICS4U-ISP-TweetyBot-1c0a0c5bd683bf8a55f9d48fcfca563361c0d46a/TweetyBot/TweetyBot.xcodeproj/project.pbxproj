@@ -12,6 +12,7 @@
 		3F0868631E51F79D0050FEEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F0868621E51F79D0050FEEC /* Assets.xcassets */; };
 		3F0868661E51F79E0050FEEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F0868641E51F79E0050FEEC /* Main.storyboard */; };
 		3F09AF091E9D2C6F00CB7183 /* SwifterMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F09AF031E9D2C6200CB7183 /* SwifterMac.framework */; };
+		3F09AF181E9D364600CB7183 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F09AF171E9D364600CB7183 /* Social.framework */; };
 		3F2301571E646CE10031D88E /* TweetDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2301561E646CE10031D88E /* TweetDriver.swift */; };
 		3F6B62361E5F90E900382BCA /* MarkovChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6B62351E5F90E900382BCA /* MarkovChain.swift */; };
 		3F8D9F531E5E15EB0089E772 /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8D9F521E5E15EB0089E772 /* FileReader.swift */; };
@@ -55,6 +56,13 @@
 			remoteGlobalIDString = F6B4D5751C7BAC4500E06514;
 			remoteInfo = SwifterTests;
 		};
+		3F09AF191E9D36C500CB7183 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F09AEF61E9D2C6200CB7183 /* Swifter.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B9F51121944A61D00894629;
+			remoteInfo = SwifterMac;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +73,7 @@
 		3F0868651E51F79E0050FEEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F0868671E51F79E0050FEEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F09AEF61E9D2C6200CB7183 /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = "../Swifter-master/Swifter.xcodeproj"; sourceTree = "<group>"; };
+		3F09AF171E9D364600CB7183 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		3F2301561E646CE10031D88E /* TweetDriver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetDriver.swift; sourceTree = "<group>"; };
 		3F6B62351E5F90E900382BCA /* MarkovChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkovChain.swift; sourceTree = "<group>"; };
 		3F8D9F521E5E15EB0089E772 /* FileReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileReader.swift; sourceTree = "<group>"; };
@@ -78,6 +87,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F09AF091E9D2C6F00CB7183 /* SwifterMac.framework in Frameworks */,
+				3F09AF181E9D364600CB7183 /* Social.framework in Frameworks */,
 				3FE077D51E6908D500C42C3B /* Cocoa.framework in Frameworks */,
 				3FE077D31E6908CF00C42C3B /* Accounts.framework in Frameworks */,
 			);
@@ -142,6 +152,7 @@
 		3FEF0C641E67D30000297B6C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3F09AF171E9D364600CB7183 /* Social.framework */,
 				3FE077D41E6908D500C42C3B /* Cocoa.framework */,
 				3FE077D21E6908CF00C42C3B /* Accounts.framework */,
 			);
@@ -162,6 +173,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				3F09AF1A1E9D36C500CB7183 /* PBXTargetDependency */,
 			);
 			name = TweetyBot;
 			productName = TweetyBot;
@@ -273,6 +285,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3F09AF1A1E9D36C500CB7183 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwifterMac;
+			targetProxy = 3F09AF191E9D36C500CB7183 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3F0868641E51F79E0050FEEC /* Main.storyboard */ = {
