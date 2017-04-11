@@ -1,0 +1,431 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3F08685F1E51F79D0050FEEC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F08685E1E51F79D0050FEEC /* AppDelegate.swift */; };
+		3F0868611E51F79D0050FEEC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0868601E51F79D0050FEEC /* ViewController.swift */; };
+		3F0868631E51F79D0050FEEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F0868621E51F79D0050FEEC /* Assets.xcassets */; };
+		3F0868661E51F79E0050FEEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F0868641E51F79E0050FEEC /* Main.storyboard */; };
+		3F09AF091E9D2C6F00CB7183 /* SwifterMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F09AF031E9D2C6200CB7183 /* SwifterMac.framework */; };
+		3F2301571E646CE10031D88E /* TweetDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2301561E646CE10031D88E /* TweetDriver.swift */; };
+		3F6B62361E5F90E900382BCA /* MarkovChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6B62351E5F90E900382BCA /* MarkovChain.swift */; };
+		3F8D9F531E5E15EB0089E772 /* FileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8D9F521E5E15EB0089E772 /* FileReader.swift */; };
+		3FE077D31E6908CF00C42C3B /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE077D21E6908CF00C42C3B /* Accounts.framework */; };
+		3FE077D51E6908D500C42C3B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE077D41E6908D500C42C3B /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3F09AEFE1E9D2C6200CB7183 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F09AEF61E9D2C6200CB7183 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C1F1944AA1A00993175;
+			remoteInfo = SwifterDemoiOS;
+		};
+		3F09AF001E9D2C6200CB7183 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F09AEF61E9D2C6200CB7183 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F50EE1944A5AB00894629;
+			remoteInfo = SwifteriOS;
+		};
+		3F09AF021E9D2C6200CB7183 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F09AEF61E9D2C6200CB7183 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F51131944A61D00894629;
+			remoteInfo = SwifterMac;
+		};
+		3F09AF041E9D2C6200CB7183 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F09AEF61E9D2C6200CB7183 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C471944AECB00993175;
+			remoteInfo = SwifterDemoMac;
+		};
+		3F09AF061E9D2C6200CB7183 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3F09AEF61E9D2C6200CB7183 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6B4D5751C7BAC4500E06514;
+			remoteInfo = SwifterTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3F08685B1E51F79D0050FEEC /* TweetyBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TweetyBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F08685E1E51F79D0050FEEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3F0868601E51F79D0050FEEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F0868621E51F79D0050FEEC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3F0868651E51F79E0050FEEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F0868671E51F79E0050FEEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F09AEF61E9D2C6200CB7183 /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = "../Swifter-master/Swifter.xcodeproj"; sourceTree = "<group>"; };
+		3F2301561E646CE10031D88E /* TweetDriver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetDriver.swift; sourceTree = "<group>"; };
+		3F6B62351E5F90E900382BCA /* MarkovChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkovChain.swift; sourceTree = "<group>"; };
+		3F8D9F521E5E15EB0089E772 /* FileReader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileReader.swift; sourceTree = "<group>"; };
+		3FE077D21E6908CF00C42C3B /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		3FE077D41E6908D500C42C3B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3F0868581E51F79C0050FEEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F09AF091E9D2C6F00CB7183 /* SwifterMac.framework in Frameworks */,
+				3FE077D51E6908D500C42C3B /* Cocoa.framework in Frameworks */,
+				3FE077D31E6908CF00C42C3B /* Accounts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F0868521E51F79C0050FEEC = {
+			isa = PBXGroup;
+			children = (
+				3F09AEF61E9D2C6200CB7183 /* Swifter.xcodeproj */,
+				3F08686D1E51F7CF0050FEEC /* Documentation */,
+				3F08685D1E51F79D0050FEEC /* TweetyBot */,
+				3F08685C1E51F79D0050FEEC /* Products */,
+				3FEF0C641E67D30000297B6C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3F08685C1E51F79D0050FEEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F08685B1E51F79D0050FEEC /* TweetyBot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3F08685D1E51F79D0050FEEC /* TweetyBot */ = {
+			isa = PBXGroup;
+			children = (
+				3F08685E1E51F79D0050FEEC /* AppDelegate.swift */,
+				3F6B62351E5F90E900382BCA /* MarkovChain.swift */,
+				3F0868601E51F79D0050FEEC /* ViewController.swift */,
+				3F2301561E646CE10031D88E /* TweetDriver.swift */,
+				3F8D9F521E5E15EB0089E772 /* FileReader.swift */,
+				3F0868621E51F79D0050FEEC /* Assets.xcassets */,
+				3F0868641E51F79E0050FEEC /* Main.storyboard */,
+				3F0868671E51F79E0050FEEC /* Info.plist */,
+			);
+			path = TweetyBot;
+			sourceTree = "<group>";
+		};
+		3F08686D1E51F7CF0050FEEC /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+		3F09AEF71E9D2C6200CB7183 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3F09AEFF1E9D2C6200CB7183 /* SwifterDemoiOS.app */,
+				3F09AF011E9D2C6200CB7183 /* SwifteriOS.framework */,
+				3F09AF031E9D2C6200CB7183 /* SwifterMac.framework */,
+				3F09AF051E9D2C6200CB7183 /* SwifterDemoMac.app */,
+				3F09AF071E9D2C6200CB7183 /* SwifterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3FEF0C641E67D30000297B6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FE077D41E6908D500C42C3B /* Cocoa.framework */,
+				3FE077D21E6908CF00C42C3B /* Accounts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3F08685A1E51F79C0050FEEC /* TweetyBot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F08686A1E51F79E0050FEEC /* Build configuration list for PBXNativeTarget "TweetyBot" */;
+			buildPhases = (
+				3F0868571E51F79C0050FEEC /* Sources */,
+				3F0868581E51F79C0050FEEC /* Frameworks */,
+				3F0868591E51F79C0050FEEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TweetyBot;
+			productName = TweetyBot;
+			productReference = 3F08685B1E51F79D0050FEEC /* TweetyBot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3F0868531E51F79C0050FEEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Clutch Design Solutions";
+				TargetAttributes = {
+					3F08685A1E51F79C0050FEEC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9ELZ5XTGMD;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3F0868561E51F79C0050FEEC /* Build configuration list for PBXProject "TweetyBot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3F0868521E51F79C0050FEEC;
+			productRefGroup = 3F08685C1E51F79D0050FEEC /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3F09AEF71E9D2C6200CB7183 /* Products */;
+					ProjectRef = 3F09AEF61E9D2C6200CB7183 /* Swifter.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				3F08685A1E51F79C0050FEEC /* TweetyBot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3F09AEFF1E9D2C6200CB7183 /* SwifterDemoiOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoiOS.app;
+			remoteRef = 3F09AEFE1E9D2C6200CB7183 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3F09AF011E9D2C6200CB7183 /* SwifteriOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifteriOS.framework;
+			remoteRef = 3F09AF001E9D2C6200CB7183 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3F09AF031E9D2C6200CB7183 /* SwifterMac.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifterMac.framework;
+			remoteRef = 3F09AF021E9D2C6200CB7183 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3F09AF051E9D2C6200CB7183 /* SwifterDemoMac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoMac.app;
+			remoteRef = 3F09AF041E9D2C6200CB7183 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3F09AF071E9D2C6200CB7183 /* SwifterTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwifterTests.xctest;
+			remoteRef = 3F09AF061E9D2C6200CB7183 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3F0868591E51F79C0050FEEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F0868631E51F79D0050FEEC /* Assets.xcassets in Resources */,
+				3F0868661E51F79E0050FEEC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3F0868571E51F79C0050FEEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F2301571E646CE10031D88E /* TweetDriver.swift in Sources */,
+				3F8D9F531E5E15EB0089E772 /* FileReader.swift in Sources */,
+				3F0868611E51F79D0050FEEC /* ViewController.swift in Sources */,
+				3F08685F1E51F79D0050FEEC /* AppDelegate.swift in Sources */,
+				3F6B62361E5F90E900382BCA /* MarkovChain.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3F0868641E51F79E0050FEEC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F0868651E51F79E0050FEEC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3F0868681E51F79E0050FEEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3F0868691E51F79E0050FEEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		3F08686B1E51F79E0050FEEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9ELZ5XTGMD;
+				INFOPLIST_FILE = TweetyBot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clutchDesigns.TweetyBot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		3F08686C1E51F79E0050FEEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 9ELZ5XTGMD;
+				INFOPLIST_FILE = TweetyBot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.clutchDesigns.TweetyBot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3F0868561E51F79C0050FEEC /* Build configuration list for PBXProject "TweetyBot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F0868681E51F79E0050FEEC /* Debug */,
+				3F0868691E51F79E0050FEEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F08686A1E51F79E0050FEEC /* Build configuration list for PBXNativeTarget "TweetyBot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F08686B1E51F79E0050FEEC /* Debug */,
+				3F08686C1E51F79E0050FEEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3F0868531E51F79C0050FEEC /* Project object */;
+}

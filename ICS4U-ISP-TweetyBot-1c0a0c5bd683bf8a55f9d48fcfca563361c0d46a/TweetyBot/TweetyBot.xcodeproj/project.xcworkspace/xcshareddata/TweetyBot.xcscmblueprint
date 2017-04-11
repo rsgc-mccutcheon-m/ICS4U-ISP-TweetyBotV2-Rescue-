@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1AEE5A0B93FB1DB36C77CFC0EF4B96ADDFAD0941",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "72E8AEF8201D0465EAD5BE5475E77330EA7EC0CD" : 9223372036854775807,
+    "1AEE5A0B93FB1DB36C77CFC0EF4B96ADDFAD0941" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BEB39DF3-E3D3-43DF-8A73-35C710A4ADEE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "72E8AEF8201D0465EAD5BE5475E77330EA7EC0CD" : "Swifter\/",
+    "1AEE5A0B93FB1DB36C77CFC0EF4B96ADDFAD0941" : "ICS4U-ISP-TweetyBot\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "TweetyBot",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "TweetyBot\/TweetyBot.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/rsgc-mccutcheon-m\/ICS4U-ISP-TweetyBot.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1AEE5A0B93FB1DB36C77CFC0EF4B96ADDFAD0941"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/rsgc-mccutcheon-m\/Swifter.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "72E8AEF8201D0465EAD5BE5475E77330EA7EC0CD"
+    }
+  ]
+}
