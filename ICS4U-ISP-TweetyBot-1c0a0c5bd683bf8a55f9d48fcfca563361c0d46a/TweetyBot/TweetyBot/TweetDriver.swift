@@ -17,6 +17,12 @@ class TweetBotDriver {
         
     }
     
+    let postfailureHandler: (Error) -> Void = {
+        print("Failed on post")
+        print($0.localizedDescription)
+        
+    }
+    
     
     var tokenKey : String
     var tokenSecret : String
@@ -97,14 +103,14 @@ class TweetBotDriver {
                 
                 //build tweet, and post it
                 self.tempTweetString = self.markov.genTweet(length: 20)
-                print(self.tempTweetString)
+                print("\(self.tempTweetString) \n")
                 
                 
                 self.swifter.postTweet(status: self.tempTweetString, success: { _ in
                     
                     print("successful post")
                     
-                }, failure: self.failureHandler)
+                }, failure: self.postfailureHandler)
                 
                 
             }, failure: self.failureHandler)
