@@ -24,7 +24,8 @@ class TweetBotDriver {
     var swifter : Swifter
     let callBackURL = URL(string: "swifter://success")!
     var sourceText : [String] = []
-   
+    var tempSourceString :String = ""
+    var tempTweetString : String = ""
     
     
     init(tokenKey: String, tokenSecret: String) {
@@ -39,9 +40,9 @@ class TweetBotDriver {
     
     func authorize(sourceUserID: String, count: Int, targetFilePath: String) {
         
-        var tempSourceString = ""
         
-            swifter.authorize(with: callBackURL , success: { _ in
+        
+            self.swifter.authorize(with: callBackURL , success: { _ in
                 
                 self.swifter.getTimeline(for: sourceUserID, count: count, trimUser: true, contributorDetails: false, includeEntities: false, success: { statuses in
                     
@@ -57,32 +58,36 @@ class TweetBotDriver {
                         
                         //if text entry for that post isnt nil, add it to the source text file
                         if let testStringUnwrap : String = tweet["text"].string {
-                            tempSourceString += testStringUnwrap
+                            self.tempSourceString += testStringUnwrap
+                            
+                            //print(testStringUnwrap)
                         }
                     }
                     //update the source text file
-                    do {
-                        try tempSourceString.write(toFile: targetFilePath, atomically: false, encoding: String.Encoding.utf8)
-                        
-                    } catch {
-                        print("failed to write tweets to text file")
-                        exit(0)
-                    }
+                    //do {
+//                        try tempSourceString.write(toFile: targetFilePath, atomically: false, encoding: String.Encoding.utf8)
+                        self.sourceText = self.tempSourceString.components(separatedBy: " ")
+                        print(self.sourceText)
                     
+//                    } catch {
+//                        print("failed to write tweets to text file")
+//                        exit(0)
+//                    }
+//                    
                     //setup file reader
-                    guard let reader = FileReader(path: targetFilePath ) else{
-                        exit(0)
-                    }
+//                    guard let reader = FileReader(path: targetFilePath ) else{
+//                        exit(0)
+//                    }
                     //parse source text
-                    for line in reader {
-                            
-                            var separatorSet = " "
-                            
-                            for word in line.components(separatedBy: separatorSet) {
-                                
-                                self.sourceText.append(word)
-                            }
-                    }
+//                    for line in reader {
+//                            
+//                            var separatorSet = " "
+//                            
+//                            for word in line.components(separatedBy: separatorSet) {
+//                                
+//                                self.sourceText.append(word)
+//                            }
+//                    }
                 
                 //rebuild markov chains with new full text
                 self.markov.words = self.sourceText
@@ -91,18 +96,32 @@ class TweetBotDriver {
                 self.markov.gen2suffixChain()
                 
                 //build tweet, and post it
+                self.tempTweetString = self.markov.genTweet(length: 20)
+                    print(self.tempTweetString)
+                    
+                    
+                    self.swifter.postTweet(status: self.tempTweetString, success: { _ in
+                        
+                        print("successful post")
+                        
+                    }, failure: self.failureHandler)
+                    
+                    
+                    
                     
                 }, failure: self.failureHandler)
                 
-                print(tweets)
-//                self.swifter.postTweet(status: self.markov.genTweet(length: 15), success: { _ in
+                print("about to post")
+                
+//                while( self.tempTweetString == "") {
+//                    sleep(1)
 //                    
-//                    print("successful post")
-//                    
-//                }, failure: self.failureHandler)
+//                }
+                
+             
                 
                 
-            }, failure: failureHandler)
+            }, failure: self.failureHandler)
         
         }
     }

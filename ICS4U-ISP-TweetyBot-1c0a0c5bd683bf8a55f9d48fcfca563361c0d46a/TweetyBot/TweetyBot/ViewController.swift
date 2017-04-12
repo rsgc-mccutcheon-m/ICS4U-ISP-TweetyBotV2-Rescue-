@@ -13,7 +13,7 @@ import Accounts
 
 class ViewController: NSViewController {
     
-    var filePath : String = "/Users/student/Documents/Clean Repos/ICS4U-ISP-TweetyBot/TweetyBot/TweetyBot/sourceText.txt"
+    let TARGET_FILE_PATH : String = "/Users/student/Documents/Clean Repos/ICS4U-ISP-TweetyBot/TweetyBot/TweetyBot/sourceText.txt"
     //var sourceText : [String] = []
     //var twitGenSource : String = ""
     
@@ -42,7 +42,7 @@ class ViewController: NSViewController {
         - Compose Tweet
         - Post Tweet
         */
-        tweetBotManager.authorize(sourceUserID: TWITTER_SOURCE_ID, count: 500, targetFilePath: filePath)
+        tweetBotManager.authorize(sourceUserID: TWITTER_SOURCE_ID, count: 500, targetFilePath: TARGET_FILE_PATH)
         
         
         //var outputTweet = markov.genTweet(length: 10)

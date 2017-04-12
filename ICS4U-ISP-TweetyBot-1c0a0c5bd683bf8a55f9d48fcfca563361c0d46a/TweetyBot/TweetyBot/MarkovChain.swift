@@ -114,7 +114,7 @@ class MarkovChain {
         }
         
         chainGen = true
-        print(words.count)
+        print("\(chainGen) : \(words.count)")
         
     }
     
