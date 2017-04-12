@@ -17,8 +17,8 @@ class ViewController: NSViewController {
     //var sourceText : [String] = []
     //var twitGenSource : String = ""
     
-    let TWITTER_CONSUMER_KEY = "44vQxA8XjbBn9RhIWyj7f1XFZ"
-    let TWITTER_CONSUMER_SECRET = "e4qaxIcmep2CxJl4dZcwoeD1nUByaz2a1Bu1u9E6X0oAYjv0b6"
+    let TWITTER_CONSUMER_KEY = "0f1tKbR5YG4335t8LCV5IlNKB"
+    let TWITTER_CONSUMER_SECRET = "D1HlCWeCXLgQEDLGm9ExcP3JqEOCd7tVYYFp4mhbNdi3FA3Wmk"
     let TWITTER_SOURCE_ID = "4749161120"
     
     //dynamic var tweets : [Tweet] = []
